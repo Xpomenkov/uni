@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Oswald:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ES Garamond', serif;
+    font-size: 16px;
+    color: #747171;
+    line-height: 1.4em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald';
+    color: #34497c;
+}
+ h2 {
+     text-transform: uppercase;
+ }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+/* Header style */
+
+.header {
+    background-color: #34497c;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+    text-align: center;
+}
+
+/* Contact form section */
+
+.contact__form {
+    background-image: url(/images/muzhik.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 70px 0;
+    text-align: center;
+        }
+
+        .contact__form form>input {
+            display: block;
+            margin: 15px auto;
+            background-color: #253458;
+        }
+
+        .contact__form h2 {
+            color: #fff;
+            font-family: EB Garamond;
+            font-weight: 700;
+            padding: 50px 0px 0px 0;
+               }
+
+               .contact__form p {
+                line-height: 60px; 
+            font-size: 20px;              }
+
+               .contact__form form {
+                   background-color: #4B69B1;
+                   color: #fff;
+                   }
+
+                   
+
+        .form__lent {
+            background-image: url(/images/Lent.png);
+            padding: 18px;
+            margin-left: -15px;
+            margin-right: -15px;
+            position: relative; 
+            display: flex; 
+            justify-content: center;
+        }
+
+        .form__lent::after {
+            border-left: 15px solid transparent;
+            border-top: 15px solid #A86F00;
+            left: 0;
+        }
+
+        .form__lent::after, .form__lent::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            bottom: -15px;
+            position: absolute;
+        }
+
+        .form__lent::before {
+            border-right: 15px solid transparent;
+            border-top: 15px solid #A86F00;
+            right: 0;
+        }
+
+        .form__lent button {
+            background-color: #253458;
+            width: 380px;
+            height: 50px;
+            font-weight: 500;
+            font-size: 24px;
+            
+            font-family: Oswald;
+            color: #fff;
+            text-transform: uppercase;
+                               
+        }
+
+        .contact__form input:focus {
+            background-color: #081229;
+            color: #fff;
+        }
+        .contact__form form>input, .contact__form button {
+            display: block;
+            margin: 15px auto;
+            padding: 15px 27px;
+
+        }
+
+        /* Steps section */
+
+        .steps {
+            background-image: url(/images/zzz.jpg);
+            background-repeat: repeat;
+            padding: 53px 0;
+            text-align: center;
+        }
+
+        .steps__item h3 {
+            font-weight: 700;
+            font-family: "EB Garamond", serif;
+            font-size: 24px;
+            }
+
+        .header__description {
+            font-size: 24px;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.5em;
+            margin: 30px 0;
+        }
+
+        .steps__items {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .steps__item:hover {
+            animation-name: wobler;
+            animation-duration: 0.6s;
+
+        }
+
+        .steps__item:hover span {
+            background-color: #fba702;
+        }
+
+        .steps__item:hover span::after {
+            border-color: #fba702 transparent;
+        }
+
+        .steps__item span {
+            background-color: #34497c;
+            display: block;
+            min-height: 182px;
+            padding: 35px 0;
+            position: relative;
+            margin-bottom: 30px;
+            transition: background-color 0.6s;
+        }
+
+        .steps__item span::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 15px 15px 0;
+            border-style: solid;
+            border-color: #34497c transparent;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            margin-left: -15px;
+            transition: border-color 0.6s;
+        }
+
+        @keyframes wobler {
+            0%, 40%, 80% {
+                transform: translateX(10px);
+            }
+            20%, 60%, 100% {
+                transform: translateX(-10px);
+            }
+
+        }
+
+        /* Galery section */
+
+        .galery{
+            padding: 53px 0;
+            text-align: center;
+        }
+
+        .galery__items {
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+           
+                       
+        }
+
+        .galery img {
+            width: 100%;
+            display: block;
+        }
+
+        .galery__items {
+            position: relative;
+        }
+
+        .galery__pic span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:2em;
+            line-height: 1.4em;
+            position: absolute;
+            background-color: #253458;
+            color: #fff;
+            font-family: Oswald, sans-serif;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            opacity: 0;
+        }
+        .galery__pic {
+            position: relative;
+        }
+
+        .galery__pic:hover span {
+            opacity: 1;
+        }
+
+        /* Students */
+
+       .students {
+           
+           background-image: url(/images/student.jpg);
+           background-repeat: no-repeat;
+            background-position: center top;
+            padding: 70px 0;
+            text-align: center;
+            
+       }
+
+       .students p {
+           color: #253458;
+           font-family: "EB Garamond";
+           font-size: 30px;
+           font-weight: 700;
+           font-style: italic;
+           padding: 30px;
+           line-height: 50px;
+       }
+
+       .stud {
+           width: 166px;
+           height: 166px;
+           background-image: url(/images/stud.png);
+           border-radius: 100%;
+           margin: 0 auto;
+           box-shadow: 0px 0px 0px 5px #fba702;
+           
+        
+       }
+
+       .row__students {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .students__fon span{
+           font-size: 30px;
+           font-family: "EB Garamond";
+           color: #253458;
+           text-transform: uppercase;
+           line-height: 50px;
+       }
+
+    
+    
+        .students__fon span::before{
+            content: "";
+            display: block;
+            width: 176px;
+            height: 0px;
+            border-bottom: 3px solid #253458;
+            margin: 10px auto;
+            }
+      
+
+        
+        /* Video */
+
+            .video {
+            padding: 50px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 393px;
+        }
+
+        .spisok {
+            list-style-image: url(/images/Ellipse\ 2.png);
+            text-align: left;
+            line-height: 45px;
+            
+        }
+
+        /* Subscribe */
+
+        .subscribe {
+            display: flex;
+            background-color: #FBA702;
+            height: 110px;
+            align-items:center;
+        }
+
+        .subscribe__text {
+            margin-top: 10px;
+        }
+        .subscribe__form button {
+            width: 175px;
+            height: 50px;
+            background-color: #A86F00;
+            color: #fff;
+            font-family: Oswald;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 50px;
+            text-transform: uppercase;
+            margin-left: 10px;
+            
+            
+        }
+
+        .subscribe__form input {
+            width: 277px;
+            height: 50px;
+            padding-top: 12px;
+
+        }
+
+        .subscribe__text {
+            font-family: "EB Garamond";
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* Footer */
+        .footer {
+          
+            list-style-type: none;
+            background-color: #000;
+            
+        }
+
+        .contact__ico .ico1{
+            list-style-image: url(/images/Vector2.png);
+        }
+
+        .contact__ico .ico2{
+            list-style-image: url(/images/Vector.png);
+        }
+
+        .footer__text h3{
+            color: #FBA702;
+            font-family: "EB Garamond";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+            padding: 22px;
+            margin: 10px;
+        }
+
+        .footer__text {
+            color: #fff;
+            font-family: "EB Garamond";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            padding-bottom: 30px;
+        }
+        
+
